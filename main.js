@@ -14,24 +14,15 @@ var titles = ["Horses", "Dressage", "Sneaker Collection", "Frogs", "Gaspard et L
 var index = 0;
 var autoplay = false;
  
-function prevPic() {
-  
-}
 function nextPic() {
   console.log("nextPic: " + index);
-  var img = document.getElementById("pic");
+  let img = document.getElementById("pic");
   index++;
   img.src = links[index % links.length];
-  
-  var title = document.getElementById("title");
-  title.innerHTML = titles[index % links.length];
-  console.log(title);
-  
-  if(autoplay) {
-    setTimeout(nextPic, 3000);
-  }
 }
-
-if(autoplay) {
-    setTimeout(nextPic, 3000);
+function prevPic() {
+  console.log("prevPic: " - index);
+  let img = document.getElementById("pic");
+  index--;
+  img.src = links[index % links.length];
 }

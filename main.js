@@ -12,7 +12,7 @@ var links = [
 ];
 var titles = ["Horses", "Dressage", "Sneaker Collection", "Frogs", "Gaspard et Lisa"];
 var index = 0;
-var autoplay = false;
+
  
 function nextPic() {
   console.log("nextPic: " + index);
